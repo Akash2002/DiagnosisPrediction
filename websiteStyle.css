@@ -1,0 +1,17 @@
+body{
+
+	background-color: #5D8AA8;
+	/* changes the background of the webpage body (entire page) to a different 
+	color */
+
+}
+
+header{
+
+	display: block;
+	/* header will be followed by a line break after it is done */
+
+	padding: 0px 0px 70px 0px;
+	/* space between the header and the block display on each side (top, right, bottom, left) */
+
+}

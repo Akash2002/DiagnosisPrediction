@@ -1,0 +1,192 @@
+<!-- For Website:
+		Input Field (Type + Autofill)
+-->
+
+<!DOCTYPE HTML>
+<html lang="en">
+
+	<head>
+
+		<meta charset="UTF-8"/>
+		<!-- set of characters used on the page -->
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- required meta tag for Bootstrap -->
+
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+		<!-- Bootstrap CSS -->
+
+
+		<meta name="description" content="this is a description"/>
+		<!-- description of the page -->
+
+		<meta name="keywords" content="word1, word2, word3"/>
+		<!-- keywords used by search engines to locate the page -->
+
+		<meta name="robots" content="index,follow"/>
+		<!-- actions done by search engine -->
+
+
+		<!-- <script src="javascriptSupplament.js"></script> -->
+		<!-- used to import specific javascript data, in this case color change -->
+
+		<base href="file:///C:/Users/micha/Desktop/website.html/"/>
+		<!-- defines the default location for all links on page -->
+		<!-- must be defined before definition of other link tags -->
+
+		<!-- <link rel="styleSheet" href="websiteStyle.css"/> -->
+		<!-- link tag to a style sheet -->
+
+		<!-- <link rel="icon" href="imgName"/> -->
+		<!-- link to an icon -->
+		<!-- image must be in the same directory as HTML file -->
+
+		<title>Predictive Diagnosis Portal</title>
+		<!-- title of website -->
+
+		<!-- <script src="excanvas.js"></script> -->
+		<!--used for drawing in the canvas if needed -->
+
+		<!-- <script src="webstore.js"></script> -->
+		<!-- for storing data -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	</head>
+
+
+
+	<body>
+
+		<div id="wrapper1" class="jumbotron text-center">
+			<h1><center>Predictive Diagnosis Portal<center></h1>
+			<h5>Using Deep Learning to Help Identify Potential Diseases</h5>
+
+			<nav id="horzNav">
+				<p>
+					<a href="#missionStatement">Our Mission</a>
+					<a href="#instructions">Instructions</a>
+				</p>
+			</nav>
+			<!-- links to different websites in the navigation section -->
+		</div>
+
+		<div id="wrapper2" class="container-fluid">
+
+			<main id="content">
+
+				<div class="indent">
+					<!-- mission statement -->
+					<a id="missionStatement"></a>
+					<!-- section id'd "Mission Statement" -->
+					<h2>Our Mission</h2>
+					<p>Our missions is to use deep learning algorithms to predict the conditions that a person can have based on their symptoms and other biological indicators. In doing this, we are not only helping the people that directly use our resource, but also those trying to research new and inovative ways of using machine learning in the healthcare industry.</p>
+					<hr>
+					<br>
+				</div>
+
+				<!-- instructions -->
+				<a id="instructions"></a>
+				<!-- section id'd "Instructions" -->
+				<h2>Instructions</h2>
+				<p>Please enter the required information in the text boxes below</p>
+				<br>
+
+				<form method="GET" action="php2.php">
+
+					Your Full Name: <br><input type="text" name="name" size="40" maxlength="50"><br><br>
+					<!-- prints "Your Name: " and allows the user to input it -->
+
+					Your Age: <br><input type="text" name="age" size="10"><br><br>
+					<!-- prints "Your Password: " and allows the user to input it -->
+
+					Height(ft' in"): <br><input type="text" name="height" size="10"><br><br>
+
+					Blood Pressure(sys/dy): <br><input type="text" name="bp" size="10"><br><br>
+
+					Pulse: <br><input type="text" name="bp" size="10"><br><br>
+
+
+					Have you ever been to a hospital before?<br>
+					<input list="boolean" name="hospitalVisits" size="10">
+					<datalist id="boolean">
+							<!-- add correct options -->
+						<option value="Yes"></option>
+						<option value="No"></option>
+							<!-- add correct options -->
+					</datalist><br><br>
+
+					If Yes, how many times?<br>
+					<input type="text" name="numberOfVisits" size="10"><br><br>
+
+					<!-- <fieldset style="width:0px"> -->
+					Allergies:<br>
+					<input list="allergies" name="allergies">
+					<datalist id="allergies">
+							<!-- add correct options -->
+						<option value="Gluten"></option>
+						<option value="Peanuts"></option>
+						<option value="Tree Nuys"></option>
+						<option value="Celery"></option>
+						<option value="Mustard"></option>
+						<option value="Eggs"></option>
+						<option value="Milk"></option>
+						<option value="Sesame"></option>
+						<option value="Fish"></option>
+						<option value="Crustacenas"></option>
+						<option value="Molluscs"></option>
+						<option value="Soya"></option>
+						<option value="Sulphites"></option>
+						<option value="Lupin"></option>
+							<!-- add correct options -->
+					</datalist><br><br>
+					<!-- <input type="submit"> -->
+					<!-- </fieldset><br> -->
+
+					<br><br>
+					<center><input type="submit"></center>
+					<br>
+
+				</form>
+
+
+			</main>
+
+
+
+		</div>
+
+
+		<style>
+			body{
+
+				/*background-color: #5D8AA8;*/
+				/* changes the background of the webpage body (entire page) to a different 
+				color */
+
+			}
+
+			header{
+
+				display: block;
+				/* header will be followed by a line break after it is done */
+
+				padding: 0px 0px 70px 0px;
+				/* space between the header and the block display on each side (top, right, bottom, left) */
+
+			}
+
+		</style>
+
+		<!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+	</body>
+
+</html>
